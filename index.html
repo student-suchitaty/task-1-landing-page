@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glazeworks – Pottery classes for beginners</title>
+  <meta name="description" content="Small-group pottery classes. Learn to throw, trim and glaze your own bowls and mugs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Glazeworks home">
+        <span class="logo-mark" aria-hidden="true"></span>Glazeworks
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact" class="nav-cta">Book a class</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Make a mug you'll actually use every morning.</h1>
+          <p>Join a six-person class, learn to throw on the wheel, and take home your own glazed bowls and mugs in four weeks. No experience needed.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Book a first class</a>
+            <a href="#classes" class="btn btn-ghost">See what you'll make</a>
+          </div>
+        </div>
+
+        <div class="pots" aria-hidden="true">
+          <span class="pot pot-tall"></span>
+          <span class="pot pot-round"></span>
+          <span class="pot pot-cup"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="classes" id="classes">
+      <div class="container">
+        <h2>Four weeks, three finished pieces</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Week 1–2: Throwing</h3>
+            <p>Centre the clay, pull up walls and shape your first bowl and mug on the wheel.</p>
+          </article>
+          <article class="card">
+            <h3>Week 3: Trimming</h3>
+            <p>Dry pieces get a clean foot ring and a handle that fits your hand.</p>
+          </article>
+          <article class="card">
+            <h3>Week 4: Glazing</h3>
+            <p>Choose from nine food-safe glazes. We fire your pieces; you collect them a week later.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-title">Glazeworks</p>
+        <p class="footer-note">Questions? hello@glazeworks.example</p>
+      </div>
+      <ul class="social" aria-label="Social links">
+        <li><a href="#" aria-label="Glazeworks on Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Glazeworks on YouTube">YouTube</a></li>
+        <li><a href="#" aria-label="Glazeworks on Pinterest">Pinterest</a></li>
+      </ul>
+    </div>
+    <p class="copyright container">&copy; 2026 Glazeworks. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle the mobile menu
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
